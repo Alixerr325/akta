@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona o... NICZYM!</title>
+</head>
+<body style="background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; min-height: 50vh; margin: 5;">
+    <h1 style="text-align: center;">
+    <a onclick="alert('na chuj tu klikasz xd')" style="color: brown; text-decoration: underline;">&Xi; AKTA KAROLA &Xi;</a>
+</h1>
+    <p style="font-size: 24px;">Strona z aktami Karola J.</p>
+    <div style="text-align: center;">
+    <a id="pobieranie" href="folder.zip" download hidden></a>
+    <button style="color: rgb(24, 7, 122);" onclick="document.getElementById('pobieranie').click()">
+        pobierz folder
+    </button>
+    </div>
+    <p style="text-align: center;">&uArr; &uArr; &uArr; &uArr;</p>
+    <div style="text-align: center;">
+    <button style="color: rgb(0, 0, 0);" onclick="alert('na chuj tu klikasz xd')">WYŻEJ ZOBACZ DO CHUJA!</button>
+    </div>
+    <img src="lolxd.jpg" alt="Obrazek o niczym" style="display: block; margin: 0 auto; width: 300px; height: auto;">
+
+    <script>
+    const obrazki = ["lolxd.jpg", "lolxd2.jpg"];
+    const wybrane = obrazki[Math.floor(Math.random() * obrazki.length)];
+
+    document.body.style.backgroundImage = `url('${wybrane}')`;
+</script>
+</body>
+</html>
