@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,53 +27,86 @@
         }
     </style>
 </head>
-<body style="background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; min-height: 50vh; margin: 5;">
-    <div class="pasek">
-        <a onclick="alert('na chuj tu klikasz xd')"
-            style="color: brown; text-decoration: underline; cursor: pointer; font-size: 32px; font-weight: bold;">
-            &Xi; AKTA KAROLA &Xi;
-         </a>
-    </div>
-    <h1 style="text-align: center;">
-</h1>
-    <p style="font-size: 24px; font-weight: bold; text-align: center; text-decoration: underline;">Strona z aktami Karola J.</p>
-    <div style="text-align: center;">
-    <button style="color: rgb(24, 7, 122);" onclick="pobierz()">
-        alert: only gay acts here dawg
-    </button>
-    <script>
-    function pobierz() {
-        const pliki = ["folder.zip", "folder2.zip", "folder3.zip", "folder4.zip"];
+<header>
 
-        pliki.forEach((plik, i) => {
-            setTimeout(() => {
-                const link = document.createElement("a");
-                link.href = plik;
-                link.download = plik;
-                document.body.appendChild(link);
-                link.click();
-                link.remove();
-            }, i * 500);
-        });
-    }
-    </script>
+    <body
+        style="background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; min-height: 50vh; margin: 5;">
+        <div class="pasek">
+            <a onclick="alert('na chuj tu klikasz xd')"
+                style="color: brown; text-decoration: underline; cursor: pointer; font-size: 32px; font-weight: bold;">
+                &Xi; AKTA KAROLA &Xi;
+            </a>
+        </div>
+</header>
+<nav>
+    <h1 style="text-align: center;">
+    </h1>
+    <p style="font-size: 24px; font-weight: bold; text-align: center; text-decoration: underline;">Strona z aktami
+        Karola J.
+    </p>
+    <div style="text-align: center;">
+        <button style="color: rgb(24, 7, 122);" onclick="pobierz()">
+            alert: only gay acts here dawg
+        </button>
+        <script>
+            function pobierz() {
+                const pliki = ["folder.zip", "folder2.zip", "folder3.zip", "folder4.zip"];
+
+                pliki.forEach((plik, i) => {
+                    setTimeout(() => {
+                        const link = document.createElement("a");
+                        link.href = plik;
+                        link.download = plik;
+                        document.body.appendChild(link);
+                        link.click();
+                        link.remove();
+                    }, i * 500);
+                });
+            }
+        </script>
     </div>
     <p style="text-align: center; color: rgb(228, 130, 10);">&uArr; &uArr; &uArr; &uArr;</p>
     <div style="text-align: center;">
-    <button style="color: rgb(0, 0, 0);" onclick="alert('na chuj tu klikasz xd')">KLIKNIJ WYŻEJ ABY  ZOBACZYĆ NAJBARDZIEJ GEJOWSKIE AKTA JAKIE KIEDYKOLWIEK WIDZIAŁEŚ</button>
+        <button style="background-color: aquamarine" color: rgb(0, 0, 0);
+            onclick="alert('na chuj tu klikasz xd')">KLIKNIJ WYŻEJ ABY ZOBACZYĆ
+            NAJBARDZIEJ
+            GEJOWSKIE AKTA JAKIE KIEDYKOLWIEK WIDZIAŁEŚ</button>
     </div>
+</nav>
 
-    <script>
+<article>
+    <p style="font-size: 24px; font-weight: bold; text-align: center; text-decoration: underline; color:aliceblue">
+        Słowa,
+        które warto znać:</p>
+    <p style="font-size: 32px; text-align: center; text-decoration: underline; color: brown;">- BLES</p>
+    <p style="font-size: 32px; text-align: center; text-decoration: underline; color: rgb(131, 224, 55);">- BEP</p>
+    <p style="font-size: 32px; text-align: center; text-decoration: underline; color: rgb(102, 141, 214);">- ETETETET
+    </p>
+    <p style="font-size: 32px; text-align: center; text-decoration: underline; color: rgb(42, 165, 114);">- MLEH</p>
+    <p style="font-size: 32px; text-align: center; text-decoration: underline; color: rgb(95, 10, 231);">- TERMIN</p>
+</article>
+
+<footer>
+    <hr>
+    <br>
+    <p style="font-size: 32px; text-align: center; text-decoration: underline;"> DYK? Karol Jemioło pokazał kutasa w
+        szatni na początku 4 klasy w SP2 Osiek</p>
+    <p style="font-size: 32px; text-align: center; text-decoration: underline;"> Jest właścicielem największej firmy
+        produkującej prezerwatywy - to wszystko w tak młodym wieku</p>
+    <p style="font-size: 32px; text-align: center; text-decoration: underline;"> Urodził się w Chełmku, ale mieszka w
+        Osieku.</p>
+    <p style="font-size: 64px; text-align: center; text-decoration: underline;"> Dziekuję za wizytę na stronie - update
+        wkrótce.</p>
+    <hr>
+</footer>
+
+<script>
     const obrazki = ["lolxd.jpg", "lolxd2.jpg"];
     const wybrane = obrazki[Math.floor(Math.random() * obrazki.length)];
 
     document.body.style.backgroundImage = `url('${wybrane}')`;
 </script>
-        <p style="font-size: 24px; font-weight: bold; text-align: center; text-decoration: underline; color:aliceblue">Słowa, które warto znać:</p>
-        <p style="font-size: 32px; text-align: center; text-decoration: underline; color: brown;">- bles</p>
-        <p style="font-size: 32px; text-align: center; text-decoration: underline; color: rgb(131, 224, 55);">- bep</p>
-        <p style="font-size: 32px; text-align: center; text-decoration: underline; color: rgb(102, 141, 214);">- etetet</p>
-        <p style="font-size: 32px; text-align: center; text-decoration: underline; color: rgb(42, 165, 114);">- mleh</p>
-        <p style="font-size: 32px; text-align: center; text-decoration: underline; color: rgb(95, 10, 231);">- termin</p>
+
 </body>
+
 </html>
